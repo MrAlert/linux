@@ -1,0 +1,6 @@
+#
+# Nintendo 64
+#
+platform-$(CONFIG_NINTENDO_NUS)	+= nintendo-nus/
+cflags-$(CONFIG_NINTENDO_NUS)	+= -I$(srctree)/arch/mips/include/asm/mach-nintendo-nus
+load-$(CONFIG_NINTENDO_NUS)	+= 0xffffffff80300000

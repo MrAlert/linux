@@ -20,6 +20,7 @@ platforms += loongson1
 platforms += mti-malta
 platforms += mti-sead3
 platforms += netlogic
+platforms += nintendo-nus
 platforms += paravirt
 platforms += pmcs-msp71xx
 platforms += pnx833x

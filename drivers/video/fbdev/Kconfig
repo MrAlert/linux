@@ -2484,3 +2484,12 @@ config FB_SSD1307
 	help
 	  This driver implements support for the Solomon SSD1307
 	  OLED controller over I2C.
+
+config FB_NINTENDO_NUS
+	bool "Nintendo 64 frame buffer support"
+	depends on FB && NINTENDO_NUS
+	select FB_CFB_FILLRECT
+	select FB_CFB_COPYAREA
+	select FB_CFB_IMAGEBLIT
+	help
+	  This is the frame buffer device driver for the Nintendo 64.
